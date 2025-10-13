@@ -15,6 +15,7 @@ data "akamai_appsec_security_policy" "my-security-policy" {
 
 output "my-security-policy" {
   value = data.akamai_appsec_security_policy.my-security-policy.id
+  
 }
 
 data "akamai_property" "my_property" {
@@ -26,3 +27,4 @@ output "my_property" {
   #value = data.akamai_property.my_property.property_id
   value = data.akamai_property.my_property.group_id
 }
+
